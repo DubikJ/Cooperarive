@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_activity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+              android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/name_milk_rec_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@drawable/shape_textview"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="25sp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="9dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/message_up_right">
+
+            <TextView
+                android:id="@+id/milk_param_type_sync_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/colorDark"
+                android:gravity="left"
+                android:focusable="false"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/info_milk_rec_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="11dp"
+            >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/message_up_left"
+                android:layout_weight="1"
+                android:id="@+id/milk_sync_ll">
+
+                <TextView
+                    android:id="@+id/milk_sync_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_medium"
+                    android:gravity="left"
+                    android:focusable="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/send_sms_button"
+                    android:text="@string/send_analyze_sms"
+                    android:drawableTop="@drawable/ic_send_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_button_phone"
+                    android:textColor='@color/colorWhile'
+                    android:textSize="@dimen/text_size_small"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/device_buttons_ll">
+            <Button
+                android:id="@+id/start_ecomilk_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_heignt_one"
+                android:background="@drawable/shape_button_left_top"
+                android:text="@string/start_ecomilk"
+                android:textColor='@color/colorWhile'
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/start_flowmeter_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_heignt_one"
+                android:background="@drawable/shape_button_right_top"
+                android:text="@string/start_flowmeter"
+                android:textColor='@color/colorWhile'
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/ret_member_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_button_return"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/save_milk_rec_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_heignt_one"
+                android:background="@drawable/shape_button_right_botton"
+                android:drawableTop="@drawable/ic_save"
+                android:text="@string/action_save"
+                android:textColor='@color/colorWhile'
+                android:textSize="@dimen/activity_margin_middle"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

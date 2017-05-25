@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/name_par_TextView"
+        android:layout_weight="1"
+        android:gravity="start|center_vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="@dimen/text_size_medium"
+        android:paddingLeft="5dp"
+        android:background="@drawable/shape_cell_left"
+        android:paddingBottom="7dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/value_par_editText"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="@dimen/text_size_medium"
+            android:paddingRight="5dp"
+            android:background="@drawable/shape_cell_edit_right"
+            android:paddingBottom="7dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/value_par_TextView"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/colorDark"
+            android:background="@drawable/shape_cell_text_right"
+            android:padding="5dp"
+            android:paddingBottom="7dp"/>
+    </LinearLayout>
+
+</LinearLayout>

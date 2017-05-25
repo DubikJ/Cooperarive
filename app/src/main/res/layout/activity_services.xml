@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+              android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_activity"
+    tools:context="com.avatlantik.cooperative.activity.ServiceActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:id="@+id/name_member_service_TextView"
+        android:background="@drawable/shape_textview"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="25sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <ListView
+        android:id="@+id/service_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.75"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+    </ListView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <Button
+            android:id="@+id/ret_member_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_button_return"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/save_service_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_button_right_botton"
+            android:drawableTop="@drawable/ic_save"
+            android:text="@string/action_save"
+            android:textColor='@color/colorWhile'
+            android:textSize="@dimen/activity_margin_middle"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

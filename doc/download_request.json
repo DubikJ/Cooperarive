@@ -1,0 +1,98 @@
+{
+  "track": {
+    "id": "6347a703-9750-11e6-80d4-000c29fedf02",
+    // required
+    "name": "Track 1",
+    // required
+    "date": "1477028219",
+    // required
+    "members": [
+      // required
+      {
+        "external_id": "275d55a7-45b7-11e6-80d1-0cc47a347093",
+        // required
+        "name": "Member1",
+        // required
+        "address": "Some address",
+        // required
+        "phone": "11-11-11",
+        // required
+        "qrcode": "275d55a7-45b7-11e6-80d1-0cc47a347093",
+        //optional
+        "services": [
+          // optional (default value for services - false)
+          {
+            "code": "code1",
+            // required
+            "value": true
+            // required
+          },
+          {
+            "code": "code2",
+            // required
+            "value": true
+            // required
+          }
+        ],
+        "documents": [
+          {
+            "code": "code1",
+            // required
+            "value": true
+            // required
+          },
+          {
+            "code": "code2",
+            // required
+            "value": false
+            // required
+          }
+        ],
+        "member_stats": {
+          // required
+          "company_loan": 111,
+          // required
+          "member_loan": 10,
+          // required
+          "milk_volume": 300
+        },
+        "milk_stats": {
+          // required
+          "fat": 2.3,
+          // required
+          "snf": 2.3,
+          // required
+          "dencity": 2.8,
+          // required
+          "added_water": 3,
+          // required
+          "fp": 3,
+          // required
+          "protein": 1.5,
+          // required
+          "conductivity": 3,
+          // required
+          "volume": 10
+        }
+      }
+    ],
+    // For PHASE1 we have to send all service codes for each synchronization
+    "service_codes": [
+      {
+        "id": "code1",
+        "name": "Service1"
+      },
+      {
+        "id": "code2",
+        "name": "Service2"
+      }
+    ],
+    // For PHASE1 we have to send all document codes for each synchronization
+    "document_codes": [
+      {
+        "id": "b9557eac-4d9d-11e6-80d1-0cc47a347093",
+        "name": "Document1"
+      }
+    ]
+  }
+}

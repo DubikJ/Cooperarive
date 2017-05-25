@@ -1,0 +1,258 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_activity"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/sync_progress_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/sync_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/syncing"
+            android:textSize="@dimen/text_size_medium"
+            android:gravity="center" />
+
+        <ProgressBar
+            android:id="@+id/sync_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/body_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context="com.avatlantik.cooperative.activity.LandingActivity">
+
+        <LinearLayout
+            android:id="@+id/tableLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/table"
+                android:background="@drawable/shape_textview"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/landing_collector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/landing_collector"
+                        android:textSize="22sp"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/landing_collector_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="4"
+                        android:paddingEnd="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingStart="5dp"
+                        android:layout_marginRight="10dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/landing_track"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/landing_track"
+                        android:textSize="22sp"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/landing_track_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="4"
+                        android:paddingStart="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingEnd="5dp"
+                        android:layout_marginRight="10dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/layout_landing_col_liters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" />
+
+                    <TextView
+                        android:id="@+id/landing_collected_liters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="4"
+                        android:text="@string/landing_collected_liters"
+                        android:paddingStart="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingEnd="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/listview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/tableLayout"
+            android:layout_marginEnd="1dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:id="@+id/list_cap_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/landing_member_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="24sp"
+                    android:text="@string/landing_member_name"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/shape_cell_left"
+                    android:paddingBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2.6">
+
+                    <TextView
+                        android:id="@+id/landing_fat_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="24sp"
+                        android:gravity="center_horizontal"
+                        android:background="@drawable/shape_cell_center"
+                        android:text="@string/landing_fat_name"
+                        android:paddingBottom="8dp"/>
+
+                    <TextView
+                        android:id="@+id/landing_litres_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="24sp"
+                        android:gravity="center_horizontal"
+                        android:background="@drawable/shape_cell_right"
+                        android:text="@string/landing_liters_name"
+                        android:paddingBottom="8dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_below="@id/tableLayout"
+                android:id="@+id/landing_members"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/landing_search"
+            android:layout_width="@dimen/fab_size_middle"
+            android:layout_height="@dimen/fab_size_middle"
+            app:srcCompat="@drawable/ic_search"
+            android:layout_marginLeft="@dimen/activity_margin_middle"
+            android:layout_marginRight="@dimen/activity_margin_middle"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="@dimen/activity_margin_middle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/listview_layout"
+            app:backgroundTint="@color/colorBlue"
+            app:fabSize="auto"
+            app:elevation="0dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/landing_registration"
+            android:layout_width="@dimen/fab_size_middle"
+            android:layout_height="@dimen/fab_size_middle"
+            app:srcCompat="@drawable/ic_registration"
+            android:layout_marginLeft="@dimen/activity_margin_middle"
+            android:layout_marginRight="@dimen/activity_margin_middle"
+            android:layout_marginBottom="120dp"
+            android:layout_marginEnd="@dimen/activity_margin_middle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/listview_layout"
+            app:backgroundTint="@color/colorBlue"
+            app:fabSize="auto"
+            app:elevation="0dp" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer"
+        app:theme="@style/NavigationDrawerStyle"/>
+
+</android.support.v4.widget.DrawerLayout>

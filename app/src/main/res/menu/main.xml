@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_activity">
+    <item
+        android:id="@+id/nav_sync"
+        android:icon="@drawable/ic_sync"
+        android:title="@string/item_sync"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+</menu>

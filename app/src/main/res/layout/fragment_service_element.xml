@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/service_el_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+
+    <Switch
+        android:id="@+id/service_el_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:checked="false"
+        android:focusable="false"
+        android:textOff="@string/questions_answer_no"
+        android:textOn="@string/questions_answer_yes"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/activity_margin_big"
+        android:button="@null"
+        android:layout_toRightOf="@id/service_el_imageview"/>
+
+</RelativeLayout>

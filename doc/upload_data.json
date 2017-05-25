@@ -1,0 +1,64 @@
+{
+  "track": {
+    // required
+    "id": "6347a703-9750-11e6-80d4-000c29fedf02",
+    // required
+    "members": [
+      {
+        // optional in case of new member
+        "external_id": "275d55a7-45b7-11e6-80d1-0cc47a347093",
+        // optional (if was uploaded)
+        "name": "Member1",
+        // optional (if was uploaded)
+        "address": "address1",
+        // optional (if was uploaded)
+        "phone": "11111",
+        // optional (if was uploaded with qrCode)
+        "qrCode": "275d55a7-45b7-11e6-80d1-0cc47a347021",
+        // optional
+        "visit": {
+          // required
+          "date": 1477028219,
+          // optional
+          "milk_params": {
+            // required
+            "fat": 2.3,
+            // required
+            "snf": 2.3,
+            // required
+            "dencity": 2.8,
+            // required
+            "added_water": 3,
+            // required
+            "fp": 3,
+            // required
+            "protein": 1.5,
+            // required
+            "conductivity": 3,
+            // required
+            "volume": 10,
+            // required
+            "ekomilk": true
+          },
+          // optional
+          "services": [
+            {
+              // required
+              "code": "service_code",
+              // required type BOOLEAN
+              "value": true
+            }
+          ],
+          "documents": [
+            {
+              // required
+              "code": "doc_code",
+              // required type BOOLEAN
+              "value": true
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

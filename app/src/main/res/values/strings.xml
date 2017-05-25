@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">Cooperative</string>
+    <string name="support_info_mail">support@avatlantik.com.ua</string>
+    <string name="info_organization">ВК "ВСЕУКРАЇНСЬКИЙ АГРАРНИЙ КООПЕРАТИВ"</string>
+
+    <!-- Login -->
+    <string name="prompt_login">Логін</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="prompt_server_adress">Адреса серверу</string>
+    <string name="action_save">Зберегти</string>
+    <string name="action_sign_in_short">Увійти</string>
+    <string name="error_invalid_email">Цей логін є недійсним</string>
+    <string name="error_invalid_password">Цей пароль занадто короткий</string>
+    <string name="error_incorrect_password">Невірний пароль</string>
+    <string name="error_field_required">Це поле є обов\'язковим</string>
+    <string name="error_authorisation_error">Невірно вказаний логін або пароль!</string>
+    <string name="error_internet_connecting">Відсутнє зєднання з інтернетом!</string>
+    <string name="error_wifi_switch">На пристрої виключений WIFI!</string>
+    <string name="error_wifi_ecomilk_connection">Пристрій по WIFI не підключений до Ekomilk!</string>
+    <string name="ecomilk_connection">Пристрій підключений до Ekomilk!</string>
+    <string name="error_usb_ecomilk_connection">Пристрій по USB не підключений до Ekomilk!</string>
+    <string name="error_connection_server">З\'єдання з сервером не встановлено! Можливо адреса серверу внесенна некорректно.</string>
+    <string name="error_retrieving_data">Помилка отримання даних!</string>
+    <string name="error_processing_data">Помилка обробки даних!</string>
+    <string name="error_data_not_found">Дані не найдено!</string>
+    <string name="error_no_data">Відсутні дані! Потрібно загрузити дані з серверу!</string>
+    <string name="error_invalid_query">Помилка запиту!</string>
+    <string name="error_data_server">Помилка обробки данних на сервері!</string>
+    <string name="finish_dowload_data">Завантаження даних виконано успішно</string>
+
+    <!-- Synchronization-->
+    <string name="sync_start">Запущена синхронізація...</string>
+    <string name="questions_Sync">Загрузити дані з серверу?</string>
+    <string name="syncing">Виконується синхронізація з сервером.</string>
+    <string name="sync_success">Синхронізація успішна.</string>
+    <string name="sync_error">Помилка сінхронізації.</string>
+    <string name="sync_cancel">Відмінено синхронізацію.</string>
+    <string name="sync_timeout">Закінчився час синхронізації.</string>
+    <string name="auth_error">Невірні логін або пароль.</string>
+    <string name="error_no_track">На серверы не сформовано маршрут!</string>
+
+    <!-- Registration -->
+    <string name="no_sync_track">Не загружений маршрут! Щоб додати нового члена кооперативу,
+        необхідно загрузити маршрут.</string>
+    <string name="turn_on_flashlight">Увімкнути ліхтарик</string>
+    <string name="turn_off_flashlight">Вимкнути ліхтарик</string>
+
+    <!-- Members -->
+    <string name="reception_milk">Прийом молока</string>
+    <string name="services">Послуги</string>
+    <string name="photo_documents">Фото документів</string>
+    <string name="member_name">Назва члена кооперативу</string>
+    <string name="member_adress">Адреса</string>
+    <string name="member_phone">Телефон</string>
+    <string name="member_qr_code">QR код</string>
+    <string name="member_qr_code_attached">QR код закріплений за: </string>
+
+    <!-- Members stats-->
+    <string name="with_photo_documents">Наявність фото документів</string>
+    <string name="sull_list_foto">Повний список</string>
+    <string name="not_sull_list_foto">Не повний список</string>
+    <string name="milk_volume_month">Об\'єм зданого молока з початку місяця</string>
+    <string name="credit_member">Заборгованість перед компанією</string>
+    <string name="credit_company">Видати гроші</string>
+    <string name="socket_exception">Підключення до серверу неможливо. Використовуйте USB з\'єднання</string>
+    <string name="not_full_info">Не заповнена інформація</string>
+
+    <!-- MemberDTO search-->
+    <string name="enter_member_name">Введіть ім\'я члена кооперативу</string>
+
+    <!-- Members detail -->
+    <string name="questions_member_datail_save">Зберегти дані в базу?</string>
+
+    <!-- Services -->
+    <string name="request_for_services">Заявка на послуги</string>
+
+    <!-- Landing-->
+    <string name="landing_collector">Сборщик</string>
+    <string name="landing_track">Маршрут</string>
+    <string name="landing_search">Пошук</string>
+    <string name="landing_member_name">Ф.І.О.</string>
+    <string name="landing_liters_name">Літри</string>
+    <string name="landing_liters_name_short">л.</string>
+    <string name="landing_money_name">Гривень</string>
+    <string name="landing_money_name_short">грн.</string>
+    <string name="landing_fat_name">Жирн.</string>
+    <string name="landing_collected_liters">Зібрано молока: </string>
+    <string name="questions_member_not_found">Не знайдено члена кооперативу!
+        Створити нового ?</string>
+    <string name="questions_enbled_qrcode">Ви хочете просканувати QR код ?</string>
+    <string name="nav_service">Сервіс</string>
+    <string name="landing_route_date">Дата маршруту</string>
+
+    <!-- Milk params-->
+    <string name="milk_fat">Жирність</string>
+    <string name="milk_snf">Доля СОМО</string>
+    <string name="milk_dencity">Густина</string>
+    <string name="milk_adw">Добавлена вода</string>
+    <string name="milk_fp">Число замерзання</string>
+    <string name="milk_protein">Білок</string>
+    <string name="milk_conductivity">Провідність</string>
+    <string name="milk_volume">Об\'єм</string>
+    <string name="сheck_received">Дочекайтесь чека. Чек отримано?</string>
+    <string name="сheck_not_received">Зберегти дані без друку чека?</string>
+    <string name="ekomilk_error">Виникла помилка в отриманні данних с пристрою! Запустіть аналіз повторно.</string>
+    <string name="start_ecomilk">Отримати дані з Ecomilk</string>
+    <string name="start_flowmeter">Отримати дані з об\'ємоміру</string>
+    <string name="send_analyze_sms">Відправити смс</string>
+    <string name="phone_call">Подзвонити</string>
+    <string name="params_from_database">Середньомісячний аналіз молока</string>
+    <string name="params_from_device">Аналіз молока отримано з пристрою</string>
+
+    <!-- Menu-->
+    <string name="item_sync">Синхронізація</string>
+    <string name="item_settings">Налаштування</string>
+    <string name="item_exit">Вихід</string>
+    <string name="questions_exit_clear">При виході будуть очищені всі дані!
+        Ви впевнені що хочете вийти ?</string>
+    <string name="questions_exit">Ви впевнені що хочете вийти ?</string>
+    <string name="double_press_exit">Будь ласка, натисніть ще раз НАЗАД, щоб вийти</string>
+    <string name="questions_title_info">Інфо</string>
+    <string name="questions_answer_yes">Так</string>
+    <string name="questions_answer_no">Ні</string>
+    <string name="questions_answer_ok">Ок</string>
+
+    <!-- Documents -->
+    <string name="document_already_exists">Цей документ вже існує</string>
+    <string name="all_documents_exist">Необхідні документи вже існують</string>
+    <string name="failed_document_downloading">Виникла помилка при завантаженні документів</string>
+    <string name="make_photo">Зробити фото</string>
+
+    <!-- Settings -->
+    <string name="connection_to_ecomilk">Підключення до Ekomilk: </string>
+    <string name="connection_name">підключення</string>
+    <string name="syncing_Ecomilk">Очікування результату від Ekomilk...</string>
+    <string name="syncing_flowmeter">Очікування результату від об\'ємоміру...</string>
+    <string name="cancel_name">Відміна</string>
+    <string name="using_Ecomilk">Використовувати Ekomilk</string>
+    <string name="using_Ecomilk_automatic_start">Автоматичний запуск аналізу</string>
+    <string name="using_flowmeter">Використовувати об\'ємомір</string>
+    <string name="using_phone">Використовувати телефон</string>
+    <string name="questions_exit_analyse">Ви впевнені що хочете відмінити ?</string>
+
+    <!-- Phone -->
+    <string name="phone_sms_send">СМС відправлено!</string>
+    <string name="phone_sms_dont_send">Невдалося відправити СМС!</string>
+    <string name="phone_sms_delivered">СМС доставлено!</string>
+    <string name="phone_sms_not_delivered">СМС не доставлено!</string>
+    <string name="phone_number_not_found">Не вказано номер телефону!</string>
+
+</resources>

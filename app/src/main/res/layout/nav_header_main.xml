@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/background_activity"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_margin_small"
+    android:paddingLeft="@dimen/activity_margin_small"
+    android:paddingRight="@dimen/activity_margin_small"
+    android:paddingTop="@dimen/activity_margin_small"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_logo" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_organization"
+                android:id="@+id/text_nav_heared_login"
+                android:textSize="18dp"
+                android:textColor="@color/zxing_result_view" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_info_mail"
+                android:textSize="16dp"
+                android:textColor="@color/zxing_result_view" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

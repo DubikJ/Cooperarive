@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ic_clear" type="drawable">@android:drawable/ic_menu_close_clear_cancel</item>
+    <item name="ic_exit" type="drawable">@mipmap/ic_exit</item>
+    <item name="ic_settings" type="drawable">@mipmap/ic_settings</item>
+    <item name="ic_sync" type="drawable">@mipmap/ic_sync</item>
+    <item name="ic_search" type="drawable">@mipmap/ic_search</item>
+    <item name="ic_registration" type="drawable">@mipmap/ic_registration</item>
+    <item name="ic_logo" type="drawable">@mipmap/ic_logo</item>
+    <item name="ic_android_sync" type="drawable">@android:drawable/stat_notify_sync_noanim</item>
+    <item name="ic_image" type="drawable">@mipmap/ic_image</item>
+    <item name="ic_arrow_back" type="drawable">@mipmap/ic_arrow_back</item>
+    <item name="ic_qrcode" type="drawable">@mipmap/qrcode</item>
+    <item name="ic_add_photo" type="drawable">@mipmap/ic_add_photo</item>
+    <item name="ic_photo_album" type="drawable">@mipmap/ic_photo_album</item>
+    <item name="ic_account" type="drawable">@mipmap/ic_account</item>
+    <item name="ic_light_on" type="drawable">@mipmap/ic_light_on</item>
+    <item name="ic_light_off" type="drawable">@mipmap/ic_light_off</item>
+    <item name="ic_milk" type="drawable">@mipmap/ic_milk</item>
+    <item name="ic_order" type="drawable">@mipmap/ic_order</item>
+    <item name="ic_save" type="drawable">@mipmap/ic_save</item>
+    <item name="ic_send_message" type="drawable">@mipmap/ic_send_message</item>
+    <item name="ic_phone_call" type="drawable">@mipmap/ic_phone_call</item>
+    <item name="ic_expand_right" type="drawable">@mipmap/ic_expand_right</item>
+    <item name="ic_expand_down" type="drawable">@mipmap/ic_expand_down</item>
+</resources>
